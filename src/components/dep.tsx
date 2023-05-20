@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import Data from "./dep.json"
+// import Data from "./dep.json"
 import { Button } from '@mui/material';
 import $ from "jquery"
 

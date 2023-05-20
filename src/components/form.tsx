@@ -2,7 +2,7 @@ import React, {  useState } from 'react';
 import { TextField, Button, Box,Container } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import {useNavigate} from "react-router-dom"
-import {ToastContainer,toast} from "react-toastify"
+import {toast} from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 interface FormState {
   name: string;
