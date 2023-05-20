@@ -3,6 +3,7 @@ import {useNavigate} from 'react-router-dom';
 import axios from "axios"
 import Box from '@mui/material/Box';
 import { DataGrid, GridColDef} from '@mui/x-data-grid';
+import {toast} from "react-toastify"
 
 import Dep from './dep';
 
@@ -49,6 +50,8 @@ const columns: GridColDef[] = [
         if(localStorage.getItem("profile-data")==null) 
         {
             navigate(-1);
+            toast.warning("Login to continue");
+
         }
         else{
             axios.get("https://jsonplaceholder.typicode.com/posts")
